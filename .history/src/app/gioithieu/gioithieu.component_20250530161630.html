@@ -21,11 +21,36 @@
         </a>
     </div>
 
-
- <H1> Text thuưử </H1>
-    
-
- 
+    <nav class="navbar navbar-dark bg-dark">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link " [routerLink]="['/trangchu1']">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">giới thiệu </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">hỗ trợ </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">hỏi đáp </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" [routerLink]="['/lab']">khu vực bài tập</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">tài khoản</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" [routerLink]="['/dangky']">đăng ký</a>
+                    <a class="dropdown-item" [routerLink]="['/dangnhap']">đăng nhập</a>
+                    <a class="dropdown-item" [routerLink]="['/qmk']">quên mật khẩu</a>
+                    <a class="dropdown-item" [routerLink]="['/dmk']">đổi mật khẩu</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" [routerLink]="['/trangchu1']">đăng xuất</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
   <textarea >Gioi thieu gi do</textarea>
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
